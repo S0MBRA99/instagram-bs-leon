@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae7db627dc.js" crossorigin="anonymous"></script>   
+    <title>Instagram</title>
+</head>
+<body>
+    <!--call the navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">    
+            <a class="navbar-brand href="#"><strong><i class="fa-brands fa-instagram"></i> Instagram</strong></a>
+            <div class="d-flex">
+                
+                <!--modal button-->
+
+                <button type="button" class="btn me-2 p-1 bg-light" data-bs-toggle="modal" data-bs-target="#createPost">
+                    Create new post +
+                </button> 
+                <div class="modal fade" id="createPost" tabindex="-1" aria-labelledby="postDeCreacion" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-2" id="postDeCreacion">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="modal-title fs-4">Caption:</h4>
+                                <textarea class="text-red" placeholder="add your photo"></textarea>
+                                <div class="d-flex mt-1">
+                                    <button class="btn btn-secondary me-2"><i class="fa-solid fa-camera"></i></button>
+                                    <button class="btn btn-secondary"><i class="fa-solid fa-location-dot"></i></button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--hidden collapse button -->
+                
+                <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            
+                            <!--button with the dropdown options-->
+
+                            <button class="btn btn-info dropdown-toggle me-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gears"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accesebility</a></li>
+                                <li><a class="dropdown-item border-bottom border-dark" href="#">Privacy and data</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!--button container to call grid or list-->
+
+    <div class="text-center mt-3 mb-3">
+        <button id="btnGrid" class="btn"><i class="bi bi-3-square text-secondary"></i></button>
+        <button id="btnList" class="btn"><i class="bi bi-1-square text-secondary"></i></button>
+    </div>
+
+    <!--container images-->
+
+    <div class="container text-center">
+        <div id="content" class="row">
+            <div class="col-12 mb-5"><img src="assets/1.png" alt="bosque" class="img-fluid w-50"></div>                
+            <div class="col-12 mb-5"><img src="assets/2.png" alt="perro" class="img-fluid w-50"></div>
+            <div class="col-12 mb-5"><img src="assets/3.png" alt="monte" class="img-fluid w-50"></div>
+            <div class="col-12 mb-5"><img src="assets/4.png" alt="alberge" class="img-fluid w-50"></div>
+            <div class="col-12 mb-5"><img src="assets/5.png" alt="ciudad" class="img-fluid w-50"></div>
+            <div class="col-12 mb-5"><img src="assets/6.png" alt="gato" class="img-fluid w-50"></div>
+            <div class="col-12 mb-5"><img src="assets/7.png" alt="montaña" class="img-fluid w-50"></div>
+            <div class="col-12 mb-5"><img src="assets/8.png" alt="gato" class="img-fluid w-50"></div>
+            <div class="col-12 mb-5"><img src="assets/9.png" alt="gato enfadado" class="img-fluid w-50"></div>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html>
